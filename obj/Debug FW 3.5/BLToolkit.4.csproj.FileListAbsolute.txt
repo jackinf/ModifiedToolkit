@@ -1,0 +1,12 @@
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.4.csprojResolveAssemblyReference.cache
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.ComponentModel.Design.GetTypeDialog.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.ComponentModel.Design.TypePicker.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.ComponentModel.ObjectBinder.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.Properties.Resources.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.4.csproj.GenerateResource.Cache
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug FW 3.5\BLToolkit.4.dll
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug FW 3.5\BLToolkit.4.pdb
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug FW 3.5\Newtonsoft.Json.dll
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug FW 3.5\Newtonsoft.Json.xml
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.4.dll
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug FW 3.5\BLToolkit.4.pdb

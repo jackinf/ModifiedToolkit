@@ -175,10 +175,10 @@ namespace BLToolkit.Reflection
 
 			public override void SetValue(object obj, object value)
 			{
-                // CUSTOM CODE
-                if (value != null && value.GetType().Name == "CourseEntityAttributes")
+			    // CUSTOM CODE
+                if (value != null && value.GetType().BaseType != null && value.GetType().BaseType.Name == "Hstore")
 			    {
-                    obj.GetType().GetProperties().First(c => c.Name == "Attributes").SetValue(obj, value, null);
+                    obj.GetType().GetProperties().First(c => c.Name.Contains("Attributes")).SetValue(obj, value, null);
 			    }
 			    else
 			    {

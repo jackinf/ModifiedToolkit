@@ -14,9 +14,9 @@ namespace BLToolkit.Web.UI
 {
 	[DefaultProperty("TypeName")]
 	[ToolboxBitmap(typeof(WebObjectBinder))]
-#if !FW4
-	[Designer(typeof(BLToolkit.Web.UI.Design.WebObjectBinderDesigner))]
-#endif
+//#if !FW4
+//    [Designer(typeof(BLToolkit.Web.UI.Design.WebObjectBinderDesigner))]
+//#endif
 	[PersistChildren(false)]
 	[ParseChildren(true)]
 	[Description("BLToolkit Web Object Binder")]

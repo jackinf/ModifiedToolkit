@@ -32,6 +32,7 @@ using BLToolkit.Reflection.MetadataProvider;
 
 using KeyValue = System.Collections.Generic.KeyValuePair<System.Type,System.Type>;
 using Convert  = BLToolkit.Common.Convert;
+using Newtonsoft.Json;
 
 namespace BLToolkit.Mapping
 {
@@ -328,24 +329,9 @@ namespace BLToolkit.Mapping
 		}
 
         // CUSTOM CODE
-        public virtual CourseEntityAttributes ConvertToCourseEntityAttribute(string value)
+        public virtual CourseEntityAttributes ConvertToCourseEntityAttribute(string json)
         {
-            var courseAttributes = new CourseEntityAttributes();
-            var type = courseAttributes.GetType();
-
-            // parse HSTORE to dictionary
-            var dict = value.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-               .Select(part => Regex.Split(part, "=>"))
-               .ToDictionary(split => split[0], split => split[1]);
-
-            foreach (var item in dict)
-            {
-                var key = item.Key.Trim();
-                if (key == "\"code\"")
-                    courseAttributes.code = item.Value;
-                if (key == "\"description\"")
-                    courseAttributes.description = item.Value;
-            }
+            var courseAttributes = JsonConvert.DeserializeObject<CourseEntityAttributes>(json);
             return courseAttributes;
 	    }
 
@@ -945,7 +931,7 @@ namespace BLToolkit.Mapping
             if (conversionType.BaseType != null)
                 baseTypeName = conversionType.BaseType.Name;
 
-		    if (baseTypeName == "Hstore`1")
+            if (baseTypeName == typeof(Hstore).Name)
 		    {
                 return ConvertToCourseEntityAttribute(value as string);		        
 		    }

@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
+using BLToolkit.Mapping.CustomObjects;
 
 namespace BLToolkit.Mapping
 {
@@ -282,11 +283,13 @@ namespace BLToolkit.Mapping
 						}
 					}
 
+                    var jsonSuffix = ma.Type.BaseType != null ? ma.Type.BaseType.Name == typeof(Hstore).Name ? "::json" : string.Empty : string.Empty;
+
 					mi.MemberAccessor             = ma;
 					mi.Type                       = ma.Type;
 					mi.MappingSchema              = mappingSchema;
 					mi.MemberExtension            = _extension[ma.Name];
-					mi.Name                       = GetFieldName   (ma);
+                    mi.Name = GetFieldName(ma) + jsonSuffix;
 					mi.MemberName                 = ma.Name;
 					mi.Storage                    = GetFieldStorage(ma);
 					mi.IsInheritanceDiscriminator = GetInheritanceDiscriminator(ma);
