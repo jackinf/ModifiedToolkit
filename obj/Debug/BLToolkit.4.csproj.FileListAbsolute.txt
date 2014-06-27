@@ -1,0 +1,10 @@
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug\BLToolkit.4.dll
+C:\Users\jevgenir\Desktop\Bltoolkit\bin\Debug\BLToolkit.4.pdb
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.4.csprojResolveAssemblyReference.cache
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.ComponentModel.Design.GetTypeDialog.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.ComponentModel.Design.TypePicker.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.ComponentModel.ObjectBinder.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.Properties.Resources.resources
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.4.csproj.GenerateResource.Cache
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.4.dll
+C:\Users\jevgenir\Desktop\Bltoolkit\obj\Debug\BLToolkit.4.pdb
